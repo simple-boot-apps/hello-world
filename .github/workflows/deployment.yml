@@ -10,7 +10,8 @@ name: Deployment
 
 on:
   push:
-    branches: [ "dev-mod-greeting" ]
+    branches: 'dev-mod-greeting'
+  
 
 permissions:
   contents: write
