@@ -48,4 +48,5 @@ jobs:
           CF_ADMIN_PWD: ${{ secrets.CF_ADMIN_PWD }}
           CF_ORG: ${{ secrets.CF_ORG }}
           CF_SPACE: ${{ secrets.CF_SPACE }}
+
         run: cf login -a $CF_API_URL -u admin -p $CF_ADMIN_PWD -o $CF_ORG -s $CF_SPACE --skip-ssl-validation && cf push
